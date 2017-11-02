@@ -22,14 +22,27 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnHelloWorld = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnHelloWorld
+        '
+        Me.btnHelloWorld.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnHelloWorld.Location = New System.Drawing.Point(119, 53)
+        Me.btnHelloWorld.Name = "btnHelloWorld"
+        Me.btnHelloWorld.Size = New System.Drawing.Size(131, 41)
+        Me.btnHelloWorld.TabIndex = 0
+        Me.btnHelloWorld.Text = "Hello World"
+        Me.btnHelloWorld.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(384, 161)
+        Me.Controls.Add(Me.btnHelloWorld)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
@@ -39,4 +52,5 @@ Partial Class Form1
 
     End Sub
 
+    Friend WithEvents btnHelloWorld As Button
 End Class
