@@ -27,13 +27,16 @@ Partial Class Form1
         '
         'btnHelloWorld
         '
+        Me.btnHelloWorld.BackColor = System.Drawing.Color.Yellow
+        Me.btnHelloWorld.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.btnHelloWorld.ForeColor = System.Drawing.Color.Red
         Me.btnHelloWorld.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.btnHelloWorld.Location = New System.Drawing.Point(119, 53)
         Me.btnHelloWorld.Name = "btnHelloWorld"
-        Me.btnHelloWorld.Size = New System.Drawing.Size(131, 41)
+        Me.btnHelloWorld.Size = New System.Drawing.Size(137, 51)
         Me.btnHelloWorld.TabIndex = 0
-        Me.btnHelloWorld.Text = "Hello World"
-        Me.btnHelloWorld.UseVisualStyleBackColor = True
+        Me.btnHelloWorld.Text = "ลาเบล"
+        Me.btnHelloWorld.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -42,7 +45,6 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(384, 161)
         Me.Controls.Add(Me.btnHelloWorld)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
